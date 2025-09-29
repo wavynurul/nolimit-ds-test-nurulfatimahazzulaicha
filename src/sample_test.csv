@@ -1,0 +1,11 @@
+Ticket Subject,Ticket Description,TicketText
+Login Issue,Customer cannot log into the account since yesterday. Tried resetting password but it didn't work.,Login Issue Customer cannot log into the account since yesterday. Tried resetting password but it didn't work.
+Payment Failed,Payment failed multiple times during checkout. Needs urgent resolution.,Payment Failed Payment failed multiple times during checkout. Needs urgent resolution.
+Product Defect,The delivered product is defective and not working as expected. Wants replacement.,Product Defect The delivered product is defective and not working as expected. Wants replacement.
+Account Suspension,Customer account was suspended without notification. Wants clarification.,Account Suspension Customer account was suspended without notification. Wants clarification.
+Shipping Delay,Order not received yet. Expected delivery was 5 days ago. Needs update.,Shipping Delay Order not received yet. Expected delivery was 5 days ago. Needs update.
+Refund Request,Customer requested a refund for the last order but hasn't received confirmation.,Refund Request Customer requested a refund for the last order but hasn't received confirmation.
+Feature Request,Customer wants a dark mode feature in the mobile app for better usability.,Feature Request Customer wants a dark mode feature in the mobile app for better usability.
+App Crash,App crashes when opening the profile page. Happens on both iOS and Android.,App Crash App crashes when opening the profile page. Happens on both iOS and Android.
+Wrong Billing,Customer was charged twice for the same order. Needs correction immediately.,Wrong Billing Customer was charged twice for the same order. Needs correction immediately.
+Password Reset,Customer forgot password and password reset email not received.,Password Reset Customer forgot password and password reset email not received.
