@@ -1,12 +1,3 @@
-license: mit
-title: nolimit-ds-test-nurulfatimahazzulaicha
-sdk: streamlit
-emoji: 🚀
-colorFrom: blue
-colorTo: red
-short_description: Customer Support Ticket Prioritization App
----
-
 # Nolimit DS Test - Nurul Fatimah Azzulaicha 🚀
 
 **Customer Support Ticket Prioritization App**  
