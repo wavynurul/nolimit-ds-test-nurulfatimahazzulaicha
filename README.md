@@ -57,8 +57,7 @@ streamlit run src/streamlit_app.py
 ## Flowchart
 
 Below is the flowchart of the ticket prioritization system:
-![Uploading flowchart_system.drawio.png…]()
-
+<img width="342" height="662" alt="flowchart_system" src="https://github.com/user-attachments/assets/0f60e404-80fd-47a3-8bb5-7bc03e439568" />
 
 **Flow Overview:**
 
