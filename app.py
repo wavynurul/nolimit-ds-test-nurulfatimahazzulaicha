@@ -79,22 +79,26 @@ elif input_type == "Upload CSV":
             # Combine subject + description
             df['TicketText'] = df['Ticket Subject'].fillna('') + ' ' + df['Ticket Description'].fillna('')
 
-            # Use a form to keep the file
+            # Use a form to submit predictions
             with st.form("predict_form"):
                 submit_button = st.form_submit_button("Predict All Tickets")
-                if submit_button:
-                    with st.spinner("Predicting all tickets..."):
-                        emb = embed_texts(df['TicketText'].tolist(), tokenizer, model)
-                        pred_labels = clf.predict(emb)
-                        df['PredictedPriority'] = le.inverse_transform(pred_labels)
-                    st.success("✅ Prediction completed!")
-                    st.dataframe(df[['Ticket Subject', 'Ticket Description', 'PredictedPriority']])
-
-                    # Download CSV
-                    csv = df[['Ticket Subject', 'Ticket Description', 'PredictedPriority']].to_csv(index=False).encode('utf-8')
-                    st.download_button(
-                        label="📥 Download Predictions CSV",
-                        data=csv,
-                        file_name="predictions.csv",
-                        mime='text/csv'
-                    )
+            
+            # Handle predictions after form submission
+            if submit_button:
+                with st.spinner("Predicting all tickets..."):
+                    emb = embed_texts(df['TicketText'].tolist(), tokenizer, model)
+                    pred_labels = clf.predict(emb)
+                    df['PredictedPriority'] = le.inverse_transform(pred_labels)
+            
+                st.success("✅ Prediction completed!")
+                st.dataframe(df[['Ticket Subject', 'Ticket Description', 'PredictedPriority']])
+            
+            # Download button must be outside the form
+            if submit_button:
+                csv = df[['Ticket Subject', 'Ticket Description', 'PredictedPriority']].to_csv(index=False).encode('utf-8')
+                st.download_button(
+                    label="📥 Download Predictions CSV",
+                    data=csv,
+                    file_name="predictions.csv",
+                    mime='text/csv'
+                )
