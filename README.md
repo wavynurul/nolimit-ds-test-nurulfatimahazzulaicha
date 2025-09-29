@@ -134,6 +134,7 @@ project_root/
 ├─ flowchart.png          # The PNG flowchart used in README
 └─ src/                   # Folder for training scripts / model placeholders
    ├─ train_model.ipynb   # Example training notebook (optional)
+   ├─ sample_test.csv     # You can try the app using sample_test.csv
    ├─ ticket_priority_clf.joblib   # Downloaded from Hugging Face
    ├─ label_encoder.joblib         # Downloaded from Hugging Face
    ├─ distilbert_tokenizer.joblib  # Downloaded from Hugging Face
