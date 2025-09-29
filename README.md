@@ -10,8 +10,14 @@ This Streamlit app predicts the priority of customer support tickets (High / Med
 
 You can test the **Customer Support Ticket Priority Predictor** directly in your browser—no installation needed.  
 
-### Open the App:
+## Open the App:
 [Click here to open the app on Hugging Face Spaces](https://huggingface.co/spaces/wavynurul09/nolimit-ds-test-nurulfatimahazzulaicha)
+
+## 📝 Use Sample CSV
+
+You can try the app with a **sample CSV file**:
+
+[Download sample_test.csv](https://github.com/wavynurul/nolimit-ds-test-nurulfatimahazzulaicha/blob/main/src/sample_test.csv)
 
 ## Quickstart 🚀
 
